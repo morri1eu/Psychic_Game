@@ -50,6 +50,10 @@ game()
             game();
             return;
         }
+        else if (userGuesses.indexOf(userGuess) >= 0 || computerChoice.indexOf(userGuess)<0){
+
+        }
+
         else {
             numOfGuesses = (numOfGuesses - 1);
             document.getElementById("left").innerHTML = (numOfGuesses);
